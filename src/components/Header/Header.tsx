@@ -1,28 +1,33 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {
-  Container,
   Header as Head,
   Left,
   Right,
   Title,
   Button,
+  Container,
 } from 'native-base';
-import IconRocket from 'react-native-vector-icons/Octicons';
+import IconRocket from 'react-native-vector-icons/Feather';
+import {Actions} from 'react-native-router-flux';
 const Header = () => {
   return (
-    <Container>
+    <View>
       <Head style={styles.header}>
         <Left>
           <Title style={styles.title}>Home</Title>
         </Left>
+
         <Right>
-          <Button transparent style={styles.post}>
-            <IconRocket name="logo-github" size={40} color="#000000" />
+          <Button
+            transparent
+            style={styles.post}
+            onPress={() => Actions.categories()}>
+            <IconRocket name="info" size={15} color="#ffffff" />
           </Button>
         </Right>
       </Head>
-    </Container>
+    </View>
   );
 };
 
@@ -31,16 +36,11 @@ export default Header;
 const styles = StyleSheet.create({
   header: {
     height: 60,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#242a37',
     shadowColor: '#000',
-    shadowOpacity: 50,
-    shadowOffset: {
-      width: 180,
-      height: 110,
-    },
   },
   title: {
-    color: '#000',
+    color: '#ffffff',
     fontSize: 22,
     fontFamily: 'Heebo-Bold',
   },
