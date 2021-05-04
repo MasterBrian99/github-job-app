@@ -1,18 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, View, ScrollView} from 'react-native';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import {StyleSheet, Text, ScrollView} from 'react-native';
+
 import {Container} from 'native-base';
 const Categories = () => {
   return (
     <>
-      <Header />
       <ScrollView>
         <Container style={styles.header}>
           <Text>This is Categories Section</Text>
         </Container>
       </ScrollView>
-      <Footer />
     </>
   );
 };

@@ -1,18 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, View, ScrollView} from 'react-native';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import {StyleSheet, Text, ScrollView} from 'react-native';
+
 import {Container} from 'native-base';
 const About = () => {
   return (
     <>
-      <Header />
       <ScrollView>
         <Container style={styles.header}>
           <Text>This is About Section</Text>
         </Container>
       </ScrollView>
-      <Footer />
     </>
   );
 };

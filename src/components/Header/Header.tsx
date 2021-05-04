@@ -1,13 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {
-  Header as Head,
-  Left,
-  Right,
-  Title,
-  Button,
-  Container,
-} from 'native-base';
+import {Header as Head, Left, Right, Title, Button} from 'native-base';
 import IconRocket from 'react-native-vector-icons/Feather';
 import {Actions} from 'react-native-router-flux';
 const Header = () => {

@@ -10,10 +10,35 @@ const Route = () => {
     <>
       <Router>
         <Scene key="root">
-          <Scene key="home" component={Home} hideNavBar={true} initial={true} />
-          <Scene key="categories" component={Categories} hideNavBar={true} />
-          <Scene key="search" component={Search} hideNavBar={true} />
-          <Scene key="about" component={About} hideNavBar={true} />
+          <Scene
+            key="home"
+            component={Home}
+            hideNavBar={true}
+            initial={true}
+            legacy={true}
+            animationEnabled={false}
+          />
+          <Scene
+            key="categories"
+            component={Categories}
+            hideNavBar={true}
+            legacy={true}
+            animationEnabled={false}
+          />
+          <Scene
+            key="search"
+            component={Search}
+            hideNavBar={true}
+            legacy={true}
+            animationEnabled={false}
+          />
+          <Scene
+            key="about"
+            component={About}
+            hideNavBar={true}
+            legacy={true}
+            animationEnabled={false}
+          />
         </Scene>
       </Router>
     </>

@@ -1,17 +1,10 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {Actions} from 'react-native-router-flux';
-import {
-  Footer as Foot,
-  FooterTab,
-  Button,
-  Icon,
-  Container,
-  Text,
-  Content,
-} from 'native-base';
+import {Footer as Foot, FooterTab, Button, Icon, Text} from 'native-base';
+
 export default function Footer() {
-  const changeComponents = key => {
+  const changeComponents = (key: string) => {
     Actions.push(key);
   };
 

@@ -1,19 +1,15 @@
 import React from 'react';
 import {Container} from 'native-base';
 import {StyleSheet, Text, ScrollView} from 'react-native';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 
 const Home = () => {
   return (
     <>
-      <Header />
       <ScrollView>
         <Container style={styles.header}>
           <Text>This is Home Section</Text>
         </Container>
       </ScrollView>
-      <Footer />
     </>
   );
 };
