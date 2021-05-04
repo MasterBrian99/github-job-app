@@ -4,7 +4,7 @@ import {StyleSheet, Text, View} from 'react-native';
 const Categories = () => {
   return (
     <View>
-      <Text>Hello</Text>
+      <Text>Hello Categories</Text>
     </View>
   );
 };
