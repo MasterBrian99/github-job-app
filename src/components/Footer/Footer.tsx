@@ -1,25 +1,41 @@
 import React from 'react';
-import {View} from 'react-native';
-import {Footer as Foot, FooterTab, Button, Icon} from 'native-base';
+import {StyleSheet} from 'react-native';
+import {Actions} from 'react-native-router-flux';
+import {Footer as Foot, FooterTab, Button, Icon, Text} from 'native-base';
+
 export default function Footer() {
+  const changeComponents = (key: string) => {
+    Actions.push(key);
+  };
+
   return (
-    <View>
+    <>
       <Foot>
-        <FooterTab>
-          <Button>
-            <Icon name="apps" />
+        <FooterTab style={styles.footer}>
+          <Button vertical onPress={() => changeComponents('home')}>
+            <Icon name="home" />
+            <Text>Home</Text>
           </Button>
-          <Button>
-            <Icon name="camera" />
+          <Button vertical onPress={() => changeComponents('categories')}>
+            <Icon name="duplicate" />
+            <Text>category</Text>
           </Button>
-          <Button active>
-            <Icon active name="navigate" />
+          <Button vertical onPress={() => changeComponents('search')}>
+            <Icon active name="search" />
+            <Text>Search</Text>
           </Button>
-          <Button>
-            <Icon name="person" />
+          <Button vertical onPress={() => changeComponents('about')}>
+            <Icon name="ios-logo-github" />
+            <Text>Github</Text>
           </Button>
         </FooterTab>
       </Foot>
-    </View>
+    </>
   );
 }
+
+const styles = StyleSheet.create({
+  footer: {
+    backgroundColor: '#212a35',
+  },
+});
