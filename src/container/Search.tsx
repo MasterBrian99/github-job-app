@@ -1,20 +1,21 @@
 import React from 'react';
-import {Container} from 'native-base';
 import {StyleSheet, Text, ScrollView} from 'react-native';
 
-const Home = () => {
+import {Container} from 'native-base';
+
+const Search = () => {
   return (
     <>
       <ScrollView>
         <Container style={styles.header}>
-          <Text>This is Home Section</Text>
+          <Text>This is Search Section</Text>
         </Container>
       </ScrollView>
     </>
   );
 };
 
-export default Home;
+export default Search;
 
 const styles = StyleSheet.create({
   header: {
@@ -22,5 +23,3 @@ const styles = StyleSheet.create({
     height: 1000,
   },
 });
-// background-color: #4158D0;
-// background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
